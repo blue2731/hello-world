@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1> Taules </h1>
+    </head>
+    <body>
+        <!--les taules es fal al body, normalment serveixen per estructurar, sense el border és generalment per estructurar-->
+        <!-- width ho fem perquè la taula agafi espai i border per a que hi hagi marges (1)-->
+        <!--amb el width a dins de cada row marquem el que han de fer tota la fila-->
+        <table border="3" width="800">
+            <tr> 
+                <th width="100"><b>HORARI</b></th>
+                <th width="100"><b>Dilluns</b></th>
+                <th width="100"><b>Dimarts</b></th>
+                <th width="100"><b>Dimecres</b></th>
+                <th width="100"><b>Dijous</b></th>
+                <th width="100"><b>Divendres</b></th>
+                <th width="100"><b>Dissabte</b></th>
+                <th width="100"><b>Diumenge</b></th>
+                
+            </tr>
+            <!--aquí farem que la casella del matí s'allargui per tota la setmana i centrar-ho-->
+            <!-- auxò-->
+            <tr>
+                <th style="color:darkcyan"><b>Mati</b></th>
+                <td colspan="5" align="center">classe</td>
+                
+                <td>Platja</td>
+                <td>Repassar</td>
+            </tr>
+            <tr>
+                    <th style="color:darkcyan"><b>Tarda</b></th>
+                    <td rowspan="2" valign="top" align="center">Practica1</td>
+                    <td>Practica2</td>
+                    <td>Practica3</td>
+                    <td> &nbsp; </td>
+                    <td>Practica5</td>
+                    <td colspan="2" align="center">festa</td>
+                    
+                </tr>
+                <tr>
+                        <th style="color:darkcyan"><b>Vespre</b></th>
+                        
+                        <td>Llegir</td>
+                        <td>anar al cinema amb els amics</td>
+                        <td>Llegir</td>
+                        <td>Llegir</td>
+                        <td colspan="2" align="center">Pixina</td>
+                        
+                    </tr>
+        </table>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <hr/>
+    </body>
+</html>
