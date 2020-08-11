@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Formularis</h1>
+        <!--S'ha de fer un per cada formulari-->
+        <!-- action="": què passa quan li dones a "enviar", a quina plana va a parar el que poses al formulari-->
+        <!-- method="": sistema d'enviament de dades. Dos molt importants: el post i el get-->
+        <!-- amb el get a google surt search? parametre=dajsgal 152081273& altra parametre-->
+        <!-- amb el post són més privades i no surten a l'enllaç del navegador-->
+        <!--<form action="" method=""></form>-->
+
+        <form>
+            <!-- el type indica quin tipus d'objecte tenim per entrar dades-->
+            <!--text: quadre per posar text. placeholder:el que es veu dins el quadre mentre que no hi ha res escrit, quan escrius perds de vista què hi va en el quadre-->
+            <!-- amb el label podem associar l'etiqueta a on va i per si fem click a l'etiqueta que ens vagi al turrón-->
+            <!--amb el for="" a dins del label posem el valor de l'id de l'input-->
+            <label for="quadrenom">Nom:</label>
+            <input type="text" placeholder="Nom" id="nom" size="30" name="Nom"/>
+            <br/>
+            Cognoms:
+            <input type="text" size="70" placeholder="Cognoms" id="cognoms" name="Cognoms"/>
+            <br/>
+            <!-- amb size li podem donar la dimensió de la mida visual del quadre-->
+            Edat:
+            <input type="text" size="10" placeholder="Edat" id="edat" name="Edat"/>
+            <br/>
+            Password:
+            <input type="password" placeholder="Password" id="password" name="Password"/>
+            <!--nova propietat que identifica què va a cadascun dels quadres "id" un cop enviem les dades-->
+            <br/><br/>
+            a partir d'aquí no és standard de tots els navegadors:
+            <!--no és recomanat introduir l'edat amb un quadre de text ja que la gent posarà el que vol i com ho vol-->
+            <!-- recomanat posar un minim i un maxim: "any-mes-dia" -->
+            <br/>
+            <br/>
+            Data naixement:
+            <input type="date" id="datanaixement" name="Data naixement" min="1900-1-1" max="2020-1-1"/>
+            <br/>
+            Visita:
+            <input type="datetime-local" id="visita" name="visita"/>
+            <br/>
+            Color:
+            <input type="color" id="color" name="color"/>
+            <br/>
+            <!-- amb el type number en el mobil treu el teclat numeric-->
+            Edat:
+            <input type="number" placeholder="i.e. 69" id="edat" name="edat" />
+            <br/>
+            <!-- en el mobil et posa el teclat amb la barra, www. etc t'ho prepara-->
+            url:
+            <input type="url" id="url" name="url" placeholder="www.example.com"/>
+            <br/>
+            <!-- al mobil et treu el teclat amb l'arroba etc-->
+            email:
+            <input type="email" id="email" name="email" placeholder="email@company.com"/>
+            <br/>
+            <br/>
+            <!--ideal tenir el name i l'id al costat. cols i rows dóna la mida-->
+            Comentaris:<br/>
+            <textarea name="comentaris" id="comentaris" cols="100" rows="8">
+             
+            </textarea>
+            <br/>
+            <br/><br/>
+            <!--amb el label amb el for si clickem al text ens selecciona la casella també-->
+            <!--el checkbox es pot marcar de manera individual, els "radio" optio, només pots marcar 1 del grup-->
+            Checkbox:
+            <input type="checkbox" id="privacitat" name="privacitat" />
+            <label for="privacitat">He llegit i accepto la <a href="https://www.pinterest.es/Mgphoto68/cute-puppies/" target="blank">politica de provacitat</a></label>
+            <br/>
+            <br/>
+            <br/>
+            <!-- amb el parametre name es linkeja-->
+            <!--amb  l'id es linkeja amb el label i amb el value arriba la informació del que és-->
+            Horari:
+            <input type="radio" name="horari" id="horarimati" value="matins"/> <label for="horarimati">matins</label>
+            <input type="radio" name="horari" id="horaritarda" value="tardes"/> <label for="horaritarda">tardes</label>
+            <input type="radio" name="horari" id="horarivespre" value="vespres"/> <label for="horarivespre">vespres</label>
+            <br/>
+            <br/>
+            <!--amb el size fem que estigui desplegat. Sense es desplega-->
+            <!-- amb el multiple i ctrl + click es marquen més d'un-->
+            Desplegables dia setmana:
+            <select name="dia_setmana" size="5" multiple id="diasetmana">
+                <option value="dilluns">dilluns</option>
+                <option value="dimarts">dimarts</option>
+                <option value="dimecres">dimecres</option>
+                <option value="dijous">dijous</option>
+                <option value="divendres">divendres</option>
+            </select>
+            <br/>
+            Desplegable desplegable:
+            <select name="dia_setmanas" id="diasetmanas">
+                    <option value="dilluns">dilluns</option>
+                    <option value="dimarts">dimarts</option>
+                    <option value="dimecres">dimecres</option>
+                    <option value="dijous">dijous</option>
+                    <option value="divendres">divendres</option>
+                </select>
+            <br/>
+            <br/>
+            <!--amb l'opció value="" podem escriure el que volem que surti al botó-->
+            <input type="submit" value="enviar formulari"/>
+            <!--el botó´reset no es recomana, buida el formulari-->
+            <input type="reset" value="borrarho tot"/>
+            <br/><br/>
+            botó neutral programable
+            <input type="button"/>
+        </form>
+    </body>
+</html>
