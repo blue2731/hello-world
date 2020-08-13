@@ -15,11 +15,26 @@
         }
         table+p+p{color:green;
         }
+        a{text-decoration:none
+
+        }
+        body{background-color:rgb(255, 255, 255);
+        }
+        a:link{color:green}
+        a:visited{color:pink}
+        a:active{color:chocolate}
+        a:hover{color:crimson;
+            text-decoration:underline;
+            font-size: 20pt
+            }
         </style>
         <!--amb el body>p configura només els "p"s que surten directament del body, els del table no-->
         <!-- amb el table+p configura el p immediatament despres de la table. molt útil per les imatges i peus de img, si afegim un + indiquem que és el seguent del p-->
         <!-- table~p configura tots els p que venen després d'una taula-->
-
+        <!--a{text-decoration:none} per aque els enllaços no siguin subratllats-->
+        <!--a: link=abans de donar click, visited= un cop visitat, active=en el moment del click, hover=quan passes per sobre-->
+        <!--a:hover super important. Ho fa interactiu. oju amb el font-size; s'ha d'estar segur de que la resta no es mourà. El hover el carrega el diable-->
+        <!-- el hover el guardem per les coses interactives, botó, imatge enllaç, enllaç,etc.-->
     </head>
     <body>
         <h1>Text <u>SUperimportant</u> de prova</h1>
@@ -36,6 +51,8 @@
         <p class="temporal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <u>Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dolor mi, at rutrum purus faucibus a. Pellentesque lorem ipsum, pharetra eu facilisis vel, porttitor at arcu. Donec ante massa, cursus nec accumsan eu, faucibus et erat. Vestibulum purus sem, venenatis non justo sed, rhoncus sagittis sapien. Ut ac enim egestas, accumsan leo vitae, gravida eros. Suspendisse potenti. Sed placerat consectetur pellentesque. Integer ut magna accumsan, cursus est id, bibendum ligula. Nulla tincidunt tortor at varius facilisis.</p>
         
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <u classe="temporal">Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dolor mi, at rutrum purus faucibus a. Pellentesque lorem ipsum, pharetra eu facilisis vel, porttitor at arcu. Donec ante massa, cursus nec accumsan eu, faucibus et erat. Vestibulum purus sem, venenatis non justo sed, rhoncus sagittis sapien. Ut ac enim egestas, accumsan leo vitae, gravida eros. Suspendisse potenti. Sed placerat consectetur pellentesque. Integer ut magna accumsan, cursus est id, bibendum ligula. Nulla tincidunt tortor at varius facilisis.</p>
-      
+        
+        <p><a href="https://www.google.es/" target="blank">plana de google</a></p>
     </body>
+
 </html>
