@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>selectors exemple 2 css</title>
+        <meta name="keyword" content="selectors,css">
+        <style type="text/css">
+        body>p{color:red;
+        }
+        td>p{color:royalblue;
+        }
+        td>p>u{color:yellow;
+        }
+      
+        table~p{color:grey
+        }
+        table+p+p{color:green;
+        }
+        </style>
+        <!--amb el body>p configura només els "p"s que surten directament del body, els del table no-->
+        <!-- amb el table+p configura el p immediatament despres de la table. molt útil per les imatges i peus de img, si afegim un + indiquem que és el seguent del p-->
+        <!-- table~p configura tots els p que venen després d'una taula-->
+
+    </head>
+    <body>
+        <h1>Text <u>SUperimportant</u> de prova</h1>
+
+        <p>Lorem ipsum dolor <b>sit amet, consectetur</b> adipiscing elit. <u>Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dolor mi, at rutrum purus faucibus a. Pellentesque lorem ipsum, pharetra eu facilisis vel, porttitor at arcu. Donec ante massa, cursus nec accumsan eu, faucibus et erat. Vestibulum purus sem, venenatis non justo sed, rhoncus sagittis sapien. Ut ac enim egestas, accumsan leo vitae, gravida eros. Suspendisse potenti. Sed placerat consectetur pellentesque. Integer ut magna accumsan, cursus est id, bibendum ligula. Nulla tincidunt tortor at varius facilisis.</p>
+        <table border="1" width="1000">
+                <tr>
+                    <td><p>Lorem ipsum dolor <b class="temporal">sit amet, consectetur</b> adipiscing elit. <u class="temporal">Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dol
+                    </td>
+                    <td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <u>Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dolor mi, at rutrum purus faucibus a. Pellentesque lorem ipsum, pharetra eu facilisis vel, porttitor at arcu gravida eros. Suspendisse potenti. Sed placerat consectetur pellentesque. Integer ut magna accumsan, cursus est id, bibendum ligula. Nulla tincidunt tortor at varius facilisis.</p>
+                     </td>
+                </tr>
+            </table>
+        <p class="temporal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <u>Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dolor mi, at rutrum purus faucibus a. Pellentesque lorem ipsum, pharetra eu facilisis vel, porttitor at arcu. Donec ante massa, cursus nec accumsan eu, faucibus et erat. Vestibulum purus sem, venenatis non justo sed, rhoncus sagittis sapien. Ut ac enim egestas, accumsan leo vitae, gravida eros. Suspendisse potenti. Sed placerat consectetur pellentesque. Integer ut magna accumsan, cursus est id, bibendum ligula. Nulla tincidunt tortor at varius facilisis.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <u classe="temporal">Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dolor mi, at rutrum purus faucibus a. Pellentesque lorem ipsum, pharetra eu facilisis vel, porttitor at arcu. Donec ante massa, cursus nec accumsan eu, faucibus et erat. Vestibulum purus sem, venenatis non justo sed, rhoncus sagittis sapien. Ut ac enim egestas, accumsan leo vitae, gravida eros. Suspendisse potenti. Sed placerat consectetur pellentesque. Integer ut magna accumsan, cursus est id, bibendum ligula. Nulla tincidunt tortor at varius facilisis.</p>
+      
+    </body>
+</html>

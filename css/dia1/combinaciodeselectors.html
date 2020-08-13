@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>selectors css</title>
+        <meta name="keyword" content="selectors,css">
+        <style type="text/css">
+        body{font-size:16pt;
+           
+            }
+        u{color:rgb(0, 143, 71);
+            font-style:italic
+           
+            }
+        h1 u{color:rgb(10, 0, 143);
+            font-variant-caps:all-small-caps;
+            }
+        p u{color:rgb(243, 138, 0);
+            }
+        table p u{color:green;
+            }
+        b{color:rgb(194, 0, 0)
+        }
+        .temporal{color:hotpink;
+            font-size:12pt;
+        }
+        p .temporal{font-size:4pt;
+
+        }
+
+        p.temporal{color:lawngreen}
+            </style>
+            <!--quan hi ha dos estils amb dues etiquetes que tenen el mateix pes l'ordre posem una altra lletra per exemple "table p u"-->
+    </head>
+    <body>
+        <h1>Text <u>SUperimportant</u> de prova</h1>
+
+        <p>Lorem ipsum dolor <b>sit amet, consectetur</b> adipiscing elit. <u>Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dolor mi, at rutrum purus faucibus a. Pellentesque lorem ipsum, pharetra eu facilisis vel, porttitor at arcu. Donec ante massa, cursus nec accumsan eu, faucibus et erat. Vestibulum purus sem, venenatis non justo sed, rhoncus sagittis sapien. Ut ac enim egestas, accumsan leo vitae, gravida eros. Suspendisse potenti. Sed placerat consectetur pellentesque. Integer ut magna accumsan, cursus est id, bibendum ligula. Nulla tincidunt tortor at varius facilisis.</p>
+       
+        <p class="temporal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <u>Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dolor mi, at rutrum purus faucibus a. Pellentesque lorem ipsum, pharetra eu facilisis vel, porttitor at arcu. Donec ante massa, cursus nec accumsan eu, faucibus et erat. Vestibulum purus sem, venenatis non justo sed, rhoncus sagittis sapien. Ut ac enim egestas, accumsan leo vitae, gravida eros. Suspendisse potenti. Sed placerat consectetur pellentesque. Integer ut magna accumsan, cursus est id, bibendum ligula. Nulla tincidunt tortor at varius facilisis.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <u classe="temporal">Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dolor mi, at rutrum purus faucibus a. Pellentesque lorem ipsum, pharetra eu facilisis vel, porttitor at arcu. Donec ante massa, cursus nec accumsan eu, faucibus et erat. Vestibulum purus sem, venenatis non justo sed, rhoncus sagittis sapien. Ut ac enim egestas, accumsan leo vitae, gravida eros. Suspendisse potenti. Sed placerat consectetur pellentesque. Integer ut magna accumsan, cursus est id, bibendum ligula. Nulla tincidunt tortor at varius facilisis.</p>
+       <table border="1" width="1000">
+           <tr>
+               <td><p>Lorem ipsum dolor <b class="temporal">sit amet, consectetur</b> adipiscing elit. <u class="temporal">Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dol
+               </td>
+               <td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <u>Aliquam hendrerit vulputate risus, nec vehicu</u>la neque dapibus sed. Mauris rutrum mi vel mi lobortis, vitae aliquam mauris porta. Morbi pulvinar dolor mi, at rutrum purus faucibus a. Pellentesque lorem ipsum, pharetra eu facilisis vel, porttitor at arcu gravida eros. Suspendisse potenti. Sed placerat consectetur pellentesque. Integer ut magna accumsan, cursus est id, bibendum ligula. Nulla tincidunt tortor at varius facilisis.</p>
+                </td>
+           </tr>
+       </table>
+    </body>
+</html>
