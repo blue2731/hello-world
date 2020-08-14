@@ -5,27 +5,43 @@
     <title>CSS exercici taula</title>
     <meta name="keywords" content="css,taules">
     <style type="text/css">
+        body{background-image: url(../dia2/seagrass.jpg);
+        background-size: 100%;
+        font-family: 'Corben', cursive;
+            }
+        
         table{text-align: center;
             font-weight: bold;
-            font-size: 16pt;
+            font-size: 14pt;
     
         }
         thead{font-size: 18pt;
-            font-weight: bold}
+            font-weight: bold;
+            border: 80px solid black;}
+        
+        
+        h1{font-size:20pt; 
+            font-weight: 900;
+           
+        }
        
         tfoot,tfoot tr:nth-child(2){background-color: rgb(241, 241, 93)}
-        thead{background-color:rgba(19, 204, 19, 0.712)}
+        thead{background-color:rgb(19, 204, 19)}
         col:nth-child(even){background-color: rgba(255, 166, 0, 0.377);}
-        tr:hover{background-color: blanchedalmond}
-        col:last-child, col:nth-last-child(2){background-color: rgb(241, 241, 93)}
+        tbody tr:hover{background-color: blanchedalmond}
         
         col:first-child,col:nth-child(2){background-color: rgb(241, 241, 241)}
         tbody tr:nth-child(even){background-color: rgb(241, 185, 79);}
+        tbody tr:nth-child(odd){background-color: rgb(243, 196, 109);}
+            #total{background-color: rgb(255, 255, 0)}
+            col:last-child, col:nth-last-child(2){background-color: rgb(241, 241, 93)}
+            div{color:white}
+            tr:first-child{padding-top: 50px}
     </style>
-   
+   <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
 </head>
 <body>
-    <table border="5" width="1200" align="center">
+    <table border="1" width="1200" align="center">
         <colgroup>
             <col></col>
             <col></col>
@@ -50,7 +66,7 @@
             </tr>
             <tr>
                 <td colspan="2" rowspan="2" width="10%">
-                    &nbsp;
+                    Sucursal
                 </td>
                 <td colspan="4">
                     2019
@@ -216,8 +232,7 @@
                 <td>11.6</td>
                 <td>?</td>
                 <td>?</td>
-                <td rowspan="2">&nbsp;</td>
-                <td rowspan="2">121.6</td>
+                <td rowspan="2" colspan="2" id="total">121.6</td>
             </tr>
             <tr>
                     <td colspan="2">Totals anuals</td>
@@ -230,7 +245,7 @@
             </tfoot>
     </table>
     <br/>
-    *Tots els valors els trobem en Millions d'Euros
+    <div>*Tots els valors els trobem en Millions d'Euros</div>
 <!--posar-ho amb thead no li canvia el format, sinó que amb el css es pot referenciar millor-->
 </body>
 </html>

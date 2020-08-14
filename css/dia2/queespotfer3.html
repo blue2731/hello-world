@@ -5,36 +5,60 @@
     <title> Font de la plana i dels elements</title>
     <meta name="keywords" content="css,exemple,propietats">
     <style type="text/css">
-        body{ background-color:#FFFFCC;
-                background-image: url(tile.jpg);
-                background-repeat: no-repeat;
-                background-position: right bottom;
-                background-attachment: fixed;
+      body{background-color: thistle}
+      
+      p.primer{background-color: red;
+                width:600px;
+                height: 50px;
+                overflow: scroll;
+                padding: 5px;
+                margin: 0px auto;
 
+                
+
+            
             }
-        p.primer{background-color: rgb(0, 0, 255);
-                opacity: 0.9;
+        p.segon{background-color: rgb(43, 226, 52);
+            border: 2px dotted #000000;
+            border-top: 2px solid black;
+            border-bottom: 2px dashed rgb(255, 115, 0);
+            border-right: none;
+            border-radius: 10px;
+            border-top-right-radius: 80px;
+            margin:50px;
         }
-        p.segon{background: rgb(6,64,249);
-            background: linear-gradient(90deg, rgba(6,64,249,1) 0%, rgba(241,255,0,1) 50%, rgba(249,0,0,1) 100%);;}
-    
+
+        p.tercer{background-color: teal;
+                    border:2px solid black;
+                border-radius: 5px 70px 20px 40px;
+                padding-left: 100px;
+                padding-top: 10px;
+                margin-left: 50px;
+            
+            }
 
     </style>
-    <!-- RGBA és molt util, no afecta al text, l'opacity si-->
-    <!--background color és un color solid. el background s'agafa de google "css gradient"-->
-    <!--del gradient els deg és l'inclinació i el % és quin % de cada color hi ha-->
-    <!-- background-repeat: no repeat, repeat-x o repeat-y-->
-    <!--l'altre valor de attachment és el scroll que és el que ve per defecte. Fixed és el fixe :v-->
-    <!--- es pot apilonar tots els backgrounds amb background: #000000 url() fixed repeat-y right bottom, però no interesa perquè no és gaire informatiu-->
-
+    <!--si treballem amb caixes recomana posar color de fons perquè es vegi millor, després ho podem treure-->
+    <!--el height no sempre es imprescindible, si el posem hi ha una nova propietat guay-->
+    <!-- overflow: hidden és tot el que sobresurt s'amaga-->
+    <!-- en el overflow hidden-x i overflow scroll es pot fer servir amb imatges-->
+    <!--el border el posem en una línia per estalviar-nos el style, width i color. Però fem border: 1px solid black-->
+    <!-- el border es pot fer solid, dotted, dashed, double, inset, outset.. es fa tot en una línia per si volem customitzar el top, bottom, etc-->
+    <!-- si no acabem amb 12 linies només de 1 paragraf border-->
+    <!-- aquests borders es poden posar molt guar a les taules. tr, td-->
+    <!-- amb el border radius es pot posar 1 valor per totes, 2 valors o 4 valors per agulles de rrellotje-->
+    <!-- margin: 0px auto és mooooolt comú-->
+    <!--padding és perque els elements respirin-->
 </head>
 <body>
     <h1> Exemples fons</h1>
     <p class="primer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum ornare tellus, ut bibendum est tincidunt sit amet. ANDORRA Vestibulum tempor orci non lacus sodales scelerisque. Duis vel velit in ex rutrum sodales. Praesent ut orci et lorem accumsan consequat. Phasellus tincidunt consequat risus, at mollis odio euismod sed. Aliquam a lectus ac nisi suscipit pellentesque. Proin mollis odio et iaculis tincidunt. Nunc interdum elit vitae commodo luctus. Maecenas lacinia non magna posuere lacinia. Maecenas sapien erat, efficitur eget magna sed, maximus rutrum leo. Nullam a tempus tellus, eget tempus orci.</p>
-
+            <br/>
+            Margin:50px
            <p class="segon">Pellentesque neque eros, facilisis a tellus feugiat, convallis dictum lorem. Donec sed lacinia nunc. Fusce quis commodo turpis. ANDORRA Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce id turpis sit amet orci maximus pharetra. Aenean varius, massa convallis sollicitudin rhoncus, est nibh venenatis augue, vel aliquam risus orci convallis erat. Donec viverra, odio egestas faucibus sagittis, orci leo scelerisque dolor, ac mattis velit elit porttitor quam.
             </p> 
-            
+            <br/>
+            Margin-left:50px
             <p class="tercer">Vivamus mauris nisl, dapibus ut varius quis, lacinia id dolor. Etiam malesuada orci mauris. Fusce venenatis neque et dapibus semper. Nullam vel hendrerit nunc. Fusce sed sollicitudin nibh. Phasellus maximus odio nec pulvinar aliquet. Donec auctor porta magna in molestie. Curabitur consectetur non ante ac facilisis. Suspendisse tempor suscipit enim, id volutpat nulla dignissim et. Nam vitae nibh in lectus semper facilisis tempus eget ipsum. Nulla tempus mauris enim, facilisis condimentum mi feugiat quis. Nam ultrices enim id nulla luctus mattis. Donec et luctus nunc. Nunc eu fringilla nisi. Nunc eleifend, mauris ac tincidunt faucibus, nibh leo tristique ligula, ut viverra mauris ligula sed metus. Nullam viverra augue posuere, euismod nunc id, scelerisque mi.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus, elit luctus porttitor lobortis, nibh velit eleifend purus, eget fermentum sapien ex non dolor. In sagittis auctor malesuada. Morbi vitae bibendum metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus nunc nibh, malesuada non aliquet nec, molestie ac felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam convallis erat eget erat lacinia elementum. Curabitur sollicitudin ex nec lectus gravida, id blandit arcu lobortis. Sed eu ornare mi. Aliquam eu augue ipsum. Fusce dapibus nulla eget massa aliquam finibus.
 
