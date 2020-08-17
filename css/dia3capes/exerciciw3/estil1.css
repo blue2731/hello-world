@@ -1,0 +1,73 @@
+body{font-family: 'Roboto', sans-serif;} 
+
+#generic{background-color: rgb(226, 167, 124);
+            z-index: -1;
+            margin:1.5%;
+        width: 95%;
+        height: 600px;
+        }
+#welcome{color:white;
+        background-color: rgb(91, 194, 87);
+        
+        padding-bottom:5px;
+        margin-top:20px;
+        border-radius: 5px;
+        
+        
+    }
+#welcome h1{padding-top:10px;
+    border:1px solid black;
+    margin-bottom: 0;    
+}
+#welcome p{border:1px solid black;
+           margin-top:0 
+    }
+
+   
+#llista{border:1px solid black;
+    margin-top:0;
+    position: relative;
+    float:left;
+    height:300px;
+    width: 200px;
+    
+    
+}
+ul{list-style-type: none;
+    margin:10px 0;
+    padding:0;
+        }
+li{border:1px solid rgb(96, 100, 96);
+    background-color:rgb(202, 218, 201);
+    padding:5px 0;
+    margin:2px 0;
+    border-radius: 5px;
+    ;
+    
+    }
+li:hover{background-color:white}
+#cos{border:1px solid black;
+    margin-top:0;
+    margin-left: 10px;
+    position: relative;
+    float:left;
+    width: 850px;
+    height: 300px;
+    margin:10px 0;
+}
+a{color:black;
+     }
+#sidebar{border:1px solid black;
+    margin-top:0;
+    position:relative;
+    float:right;
+    width: 200px;
+    height: 300px;
+    margin:10px 0;
+}
+#lastthing{border:1px solid black;
+    margin-top:0;
+    position:relative;
+    float:left
+}
+#estil1{background-color:rgb(91, 194, 87)}

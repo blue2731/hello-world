@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Containers</title>
+    <meta name="keywords" content="containers,capes,css">
+    <style type="text/css">
+        body{margin:0}
+        #container{
+            background-color: rgb(241, 241, 155);
+            width: 90%;
+            height: 600px;
+            margin:0 auto;
+
+        }
+        .prod{
+            background-color: #ff3333;
+            width: 350px;
+            height: 500px;
+            border:1px solid #000000;
+            margin: 20px;
+            position:relative;
+            float:left;
+
+        }
+        p{text-align: justify;
+            margin:auto 20px}
+        .prod img{
+            width: 250px;
+            margin: 20px;
+        }
+        input{position:absolute;
+                right:20px;
+                bottom:10px;
+                }
+
+        </style>
+        <!--margin 0 auto: distribueix de manera automatica el margin dels costats per a que quedi al mig-->
+        <!-- position: relative-->
+</head>
+<body>
+    <div id="container">
+        <form>  
+        <div class="prod">
+                <img src="chainsaw.jpg" alt="chainsaw">
+                <p>The best chainsaw in the market viverra nunc. Quisque volutpat posuere justo, in laoreet mi dapibus vel. Fusce eu sodales lorem, sed ullamcorper nisl. Pellentesque sollicitudin lobortis fum.</p>
+                <input type="submit" value="Comprar"/>
+            </div>
+
+            <div class="prod">
+                <img src="taladro.jpg" alt="taladro">
+                <p>The best taladro in the market viverra nunc. Quisque volutpat posuere justo, in laoreet mi dapibus vel. Fusce eu sodales lorem, sed ullamcorper nisl. Pellentesque sollicitudin lobortis felis, laoreet sollicitudin neque. In</p>
+                <input type="submit" value="Comprar"/>  
+            </div>
+            <div class="prod">
+                <img src="hammer.jpg" alt="hammer">
+                <p>The best hammer in the market viverra nunc. Quisque volutpat posuere justo, in laoreet mi dapibus vel. Fusce eu sodales lorem, sed ullamcorper nisl. Pellentesque sollicitudin lobortis felis, laoreet sollicitudin neque. In</p>
+                <input type="submit" value="Comprar"/>
+            </div>
+        </form> 
+    </div>
+</body>
+</html>

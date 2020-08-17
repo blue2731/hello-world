@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CAPES </title>
+        <meta name="keyword" content="capes,css,div"/>
+            <style type="text/css">
+                    #capa1{background-color: chocolate;
+                            width:100%;
+                            height:50px;
+                            position:fixed;
+                            bottom:0px;
+                            left:0px;
+                            z-index: 2;
+                        }
+
+                    #capa2{background-color: darkcyan;
+                            width:800px;
+                            height:600px;
+                            position:absolute;
+                            top:300px;
+                            right:0px;
+                            padding-left:50px;
+                            z-index:1;
+                        }
+                    #paraulaimportant{font-style: italic}
+                
+                </style>
+<!-- aquest style es pot fer en un document extern-->
+<!-- el scroll horitzontal és el gran enemic-->
+<!-- amb el z-index ordenem les capes en l'eix z, com més gran és el num més endavant queda-->
+<!-- el text normal té posició de 0, es pot posar el z-index com a "-1" per a que estigui radere-->
+<!--la capa1 no queda al bottom tota l'estona perquè és absolut, però si posem fixed si que es queda-->
+    </head>
+    <body>
+        <h1>EL PROTAGONISTA D'AVUI es l'etiqueta <span id="paraulaimportant">div</span></h1>
+        <div id="capa1">
+            Lorem ipsum dolor sit amet, elit.   ACCEPTA LES COOKIES   Donec hendrerit, mauris sed accumsan fringilla, elit nisl molestie ex, at ultricies arcu nulla a libero. Aenean venenatis felis mollis sem tempus aliquam. Cras quis maximus ligula. Aenean scelerisque diam id dolor hendrerit rhoncus. Sed dui nisi, mattis ac auctor in, lobortis sit amet nisl. Donec tempor quam nisl. Maecenas venenatis pulvinar varius.
+
+            </div>
+
+        <div id="capa2">
+            Quisque eu purus ullamcorper, ornare lorem ac, commodo nisl. Mauris vestibulum, diam at sollicitudin vulputate, massa dolor iaculis metus, non vehicula massa augue sed ligula. Praesent ullamcorper libero et nibh cursus laoreet. Donec a ullamcorper lectus. Sed turpis dui, mollis at molestie sit amet, lobortis ac purus. Aliquam sit amet ornare nibh. Sed sed lectus ac enim maximus porta in in orci. Phasellus tortor orci, blandit id mauris eget, viverra fermentum purus. Sed ut diam ut ex facilisis molestie.
+            </div>
+           
+    </body>
+    <!--l'etiqueta div serveix per fer capes, per estructurar-->
+    <!-- després d'aquesta classe hi ha un abans i un després-->
+    <!--oju amb els identificadors, algun cop se'ns escapara tenir un identificador igual amb el copiar pegar-->
+</html>
