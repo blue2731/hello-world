@@ -1,0 +1,46 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Repas positions</title>
+    <meta name="keywords" content="positions,capes,div,css">
+    <style type="text/css">
+        #container{
+            background-color: #dd9b9b;
+            width: 500px;
+            height:600px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .prod{
+            background-color: aquamarine;
+            
+            width: 200px;
+            
+            margin:10px;
+            font-size: 40px;
+            line-height: 150%;
+            text-align: center;
+            font-family: 'Monoton', cursive;
+            color:#08811c;
+        }
+        #oferta{ display:none;
+
+        }
+    
+    </style>
+    <!-- el position relative i float left no sempre va bé, utitlitzem una graella per millorar-ho, tot això al container-->
+    <!--display flex-->
+    <!-- display none ho farem servir molt amb el javascript per tal de fer interactiva la pagina-->
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div class="prod">A  <br/>ag <br/> ou</div>
+        <div class="prod" id="oferta">B <br/> B</div>
+        <div class="prod">C</div>
+        <div class="prod">D</div>
+        <div class="prod">E</div>
+    </div>
+</body>
+</html>
