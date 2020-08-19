@@ -8,9 +8,9 @@
 }
 
 .planamig{width: 800px;
-            background-color: chartreuse;
-        height: 90%;
-        padding:31px 0;
+        background-color: chartreuse;
+        height: 100%;
+       ;
         margin:0px auto;
         border:1px solid black;
         
@@ -27,7 +27,7 @@
                 
                 box-sizing: border-box}
 
-.serveis{background-color: blueviolet;
+.serveis{background-color: white;
             width: 170px;
         position: relative;
         float: left;
@@ -43,3 +43,28 @@
 @media screen and (max-width:850px) {
     .planamigcentrada{width: }
 }
+
+#caixabotons{
+    background-color: rgb(75, 211, 120);
+    width: 100%;
+    height: 245px;
+    margin:0 auto;
+    padding:30px 0;
+    
+    
+}
+#nextstep{width:100%;
+        background-color:red;  
+        color:white;      
+    }
+
+    .nextstep{width:250px;
+    height:40px;
+    background-color:rgb(197, 194, 197);
+    position: relative;
+    float:left; 
+    border:1px solid black;
+
+    }
+
+    #caixavisit{margin:0 22px;}
