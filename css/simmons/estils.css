@@ -1,0 +1,45 @@
+#caixacalendar{
+    background-color: rgb(75, 206, 211);
+    width: 100%;
+    height: 645px;
+    margin:0 auto;
+    
+    
+}
+
+.planamig{width: 800px;
+            background-color: chartreuse;
+        height: 90%;
+        padding:31px 0;
+        margin:0px auto;
+        border:1px solid black;
+        
+        
+        
+        
+        }
+
+.planamigcentrada{margin:0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                border:1px solid black;
+                width: 100%;
+                
+                box-sizing: border-box}
+
+.serveis{background-color: blueviolet;
+            width: 170px;
+        position: relative;
+        float: left;
+         margin:13px ;
+         border:1px solid black;
+        padding:10px;
+        box-sizing: border-box;
+        }
+
+.serveis img{width:90%;
+            display: block;
+               margin:0px 5px;}
+@media screen and (max-width:850px) {
+    .planamigcentrada{width: }
+}
