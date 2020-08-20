@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transformacions</title>
+        <meta name="keywords" content="transformacions,css">
+        <style type="text/css">
+            a{
+                color:black;
+                text-decoration: none;
+                border:1px solid black;
+                width: 150px;
+                height: 30px;
+                background-color: red;
+                display: block;
+                text-align: center;
+                padding-top:10px;
+                box-shadow: 3px 3px 3px yellowgreen;
+                margin:80px;
+                transition: background-color 0.5s, transform 3s;
+                border-radius: 10px;
+                
+            }
+            a:hover{
+                background-color: rgba(255, 0, 0, 0.733);
+                transform:rotate(-2200deg)
+            }
+
+            #boto{
+                color:black;
+                text-decoration: none;
+                border:1px solid black;
+                width: 150px;
+                height: 30px;
+                background-color: red;
+                display: block;
+                text-align: center;
+                padding-top:10px;
+                box-shadow: 3px 3px 3px yellowgreen;
+                margin:80px;
+                transition: background-color 0.5s, transform 0.5s;
+                border-radius: 10px;
+            }
+            #boto:hover{
+                background-color: rgba(255, 0, 0, 0.733);
+                transform:scale(2) rotate(10deg) scaleX(1.1) skew(30deg,30deg) translate(40px);
+            }
+            #boto2{
+                color:black;
+                text-decoration: none;
+                border:1px solid black;
+                width: 150px;
+                height: 30px;
+                background-color: rgb(240, 169, 169);
+                display: block;
+                text-align: center;
+                padding-top:10px;
+                box-shadow: 3px 3px 3px yellowgreen;
+                margin:80px;
+                transition: background-color 0.5s, transform 0.5s;
+                border-radius: 10px;
+            }
+            #boto2:hover{
+                background-color: rgba(255, 0, 0, 0.733);
+                transform:rotateX(360deg);
+            }
+            #boto3{
+                color:black;
+                text-decoration: none;
+                border:1px solid black;
+                width: 150px;
+                height: 30px;
+                background-color: rgb(109, 76, 76);
+                display: block;
+                text-align: center;
+                padding-top:10px;
+                box-shadow: 3px 3px 3px yellowgreen;
+                margin:80px;
+                transition: background-color 0.5s, transform 5s;
+                border-radius: 10px;
+            }
+            #boto3:hover{
+                background-color: rgba(255, 0, 0, 0.733);
+                transform:;
+            }
+        </style>
+
+        <!--els enllaços no agafen propietats de tipus block, sino que es comporta com una linia-->
+        <!-- transform(per posar de costat)-->
+
+    </head>
+    <body>
+        <a href="https://www.pinterest.es/pin/414542340703707376/" target="blank"> Apreta!</a>
+        <a href="https://www.pinterest.es/pin/414542340703707376/" target="blank" id="boto"> Apreta!</a>
+        <a href="https://www.pinterest.es/pin/414542340703707376/" target="blank" id="boto2"> Apreta!</a>
+        <a href="https://www.pinterest.es/pin/414542340703707376/" target="blank" id="boto3"> Apreta!</a>
+    </body>
+</html>
