@@ -1,0 +1,11 @@
+:root{ --colorlletrablau:#0A60B0}
+#nextstep{
+        height: 200px;
+    background-color:#00A881}
+
+.container{height: 100%;
+            }
+#foot{height: 400px;}
+#simmonslogo{width: 100%}
+a{color:var(--colorlletrablau)}
+.rounded-circle{background-color: #00A881}
