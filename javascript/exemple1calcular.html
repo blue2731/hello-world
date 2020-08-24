@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calcul simple </title>
+        <meta name="keywords" content="parametres, funcions, javascript">
+        
+        <script language="javascript">
+            function suma(num1,num2){
+                window.alert(num1+num2)
+            }
+            function resta(num1,num2){
+                window.alert(num1-num2)
+            }
+            function divisio(num1,num2){
+                window.alert(num1/num2)
+            }
+            function multiplicacio(num1,num2){
+                window.alert(num1*num2)
+            }
+           
+        </script>
+    </head>
+    <body>
+        Numero 1:
+        <input type="text" name="numero1performulari" id="numero1" size="5"/>
+        <br/>
+        Numero 2:
+        <input type="text" name="numero2performulari" id="numero2" size="5"/>
+        <br/>
+        <input type="button" value="Divisio" onclick="divisio(document.getElementById('numero1').value,document.getElementById('numero2').value)"/>
+
+        
+        <br/>
+        <br/>
+        <br/>
+        <input type="button" value="suma" onclick="suma(10,2)")/>
+
+        <input type="button" value="resta" onclick="resta(10,2)"/>
+
+        <input type="button" value="divisio" onclick="divisio(10,2)"/>
+
+        <input type="button" value="multiplicacio" onclick="multiplicacio(10,2)"/>
+        
+        
+    </body>
+
+</html>
