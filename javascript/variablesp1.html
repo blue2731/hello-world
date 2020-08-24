@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables p1</title>
+        <meta name="keywords" content="variables,parametres, funcions, javascript">
+        <script language="javascript">
+            var quantitat=0 //molt important fer l'igualtat a 0, si no ho fem surt NaN: not a number. Si fem quantitat + 1 sense assignar no
+            /*la variable ha d'anar a fora si no l'agafa com a una variable local, cada vegada que cridem la funcio es repeteix
+            si es una variable local es repeteix desde 0. 
+            Al estar a fora no perd el seu valor quan es torna a clicar, aixo es diu variable global*/
+            function contar(){
+                //quantitat=1;//assignacio: l'1 va a quantitat
+                //quantitat=quantitat+1; //autoassignacio
+                //quantitat +=1 //es pot fer per simplificar. amb ganes de joder haha
+                quantitat ++; //és el mateix que el de dalt i mes correcte, d'un en un, si volem de més en més utilitzem els de dalt.
+                window.alert(quantitat);
+                    //la funcio es pot fer en qualsevol lloc, si volem utilitzar-la a altres pantalles diferents, es posa en un arxiu js extern
+                }
+                /* la variable pot guardar dades per utilitzarho sempre que necessiti, sempre que estigui fora de la funció. Variable global.*/
+        </script>
+    </head>
+    <body>
+        <!-- objectiu sera fer un boto que mostri els cops que hem clicat-->
+        <!-- pas 1: fer un boto-->
+        <input type="button" value="boto clicable" onclick="contar()"/>
+        
+    </body>
+</html>

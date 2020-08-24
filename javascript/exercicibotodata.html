@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>boto data guay</title>
+        <meta name="keywords" content="variable, javascript,exercici,web">
+        <script language="javascript">
+        function mostrardata(){
+            var d=new Date(); //definir dia d'avui
+            var dia=d.getDate();//agafar dia
+            var mes=d.getMonth();//agafar mes
+            var any=d.getFullYear();//agafar any actual
+            var hora=d.getHours();//agafar l'hora
+            var minuts=d.getMinutes();//agafar minuts
+            var segons=d.getSeconds();//agafar segons
+            window.alert("Avui som dia "+dia+" del mes "+(mes+1)+" de l'any "+(any) + " i és l'hora "+hora+":"+(minuts)+":"+(segons)+".");
+        }
+        </script>
+        <style type="text/css">
+        input{
+            width:200px;
+            height: 50px;
+        }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Data" onclick="mostrardata()"/>
+    </body>
+</html>

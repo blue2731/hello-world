@@ -1,0 +1,26 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+  
+    <title>Boto mostrar data</title>
+
+    <script language="javascript">
+        //function mostrarData{} és el mateix
+        function mostrar_data(){ //no oblidar el parentesi de la funcio
+            var d=new Date();
+            //var dia= d.getDate(); //les variables son gratis, tira de variables
+            //var mes= d.getMonth();// agafa el mes, i va de 0 a 11 per associar amb arrays.
+            //window.alert(d)
+            //window.alert("avui som dia " + dia)    //hem de posar "+" per concatenar, espai entre -dia i "- per afegir un espai    
+            //window.alert("avui es dia " + (mes +1));// els parentesis separen la concatenacio de la suma
+            var any=d.getFullYear();
+            //el mateix amb d.getHours(), d.getMinutes(), d.getSeconds()
+            window.alert(any)
+            }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="data" onclick="mostrar_data()"/>
+</body>
+</html>
