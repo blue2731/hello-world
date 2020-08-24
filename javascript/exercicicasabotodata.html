@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+            function mostrardata(){
+                var months = [
+                    "Gener",
+                    "Febrer",
+                    "Març",
+                    "Abril", 
+                    "Maig",
+                    "Juny",
+                    "Juliol",
+                    "Agost",
+                    "Septembre",
+                    "Octubre",
+                    "Novembre",
+                    "Desembre",
+                ];
+                var d = new Date();
+
+                var dia = d.getDate();
+                var mes = d.getMonth();
+                var any = d.getFullYear();
+                var hores = d.getHours();
+                var minuts = d.getMinutes();
+                var segons = d.getSeconds();
+                
+                window.alert("Avui és dia " + dia + " del mes " + months[mes] + "de l'any " + any + 
+                " i són les: " + hores + ":" + minuts + ":" + segons + ".");
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="data" onclick="mostrardata()"/>
+    </body>
+</html>
