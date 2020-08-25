@@ -14,16 +14,16 @@
             var primer = document.getElementById("select_primer").value;
             if (primer == "primer1"){
                 //window.alert("has escollit el primer1");
-                fotoprimer.innerHTML="<img src='https://i.pinimg.com/originals/fa/25/b1/fa25b1cc0e68cbd0e1f3e39eb979db62.jpg'>";
+                fotoprimer.innerHTML="<img src='fotosmenu/pr_canelons.jpg'>";
             }
             else{
                 if(primer == "primer2"){
                     //window.alert("has escollit el primer2");
-                    fotoprimer.innerHTML="<img src='https://i.pinimg.com/originals/8e/eb/90/8eeb90c847f1737bcb33532684b5e30a.jpg'>";
+                    fotoprimer.innerHTML="<img src='fotosmenu/pr_amanida.jpg'>";
                 }
                 else{
                     //window.alert("has escollit el primer3");
-                    fotoprimer.innerHTML="<img src='https://i.pinimg.com/originals/db/7c/df/db7cdfe598f599f7fa3d38c4df53b3b5.png'>";
+                    fotoprimer.innerHTML="<img src='fotosmenu/pr_embotit.jpg'>";
                 }
             }
         }
@@ -31,16 +31,16 @@
             var segon = document.getElementById("select_segon").value;
             if (segon == "segon1"){
                 //window.alert("has escollit el segon1");
-                fotosegon.innerHTML="<img src='https://i.pinimg.com/originals/37/c7/fa/37c7fa4be4101bb80b852a3164450440.png'>";
+                fotosegon.innerHTML="<img src='fotosmenu/se_entrecot.jpg'>";
             }
             else{
                 if(segon == "segon2"){
                     //window.alert("has escollit el segon2");
-                fotosegon.innerHTML="<img src='https://i.pinimg.com/originals/8c/e9/11/8ce9116f8b2d15332bac91296b6ce0df.jpg'>";
+                fotosegon.innerHTML="<img src='fotosmenu/se_paella.jpg'>";
                 }
                 else{
-                    window.alert("has escollit el segon3");
-                fotosegon.innerHTML="<img src='https://i.pinimg.com/originals/a8/56/73/a85673d7e66b9582a899edcc6032703b.jpg'>";
+                    //window.alert("has escollit el segon3");
+                fotosegon.innerHTML="<img src='fotosmenu/se_sardines.jpg'>";
                 }
             }
         }
@@ -48,15 +48,15 @@
             var postre = document.getElementById("select_postre").value;
             if(postre == "postre1"){
                 //window.alert("has escollit el postre1");
-                fotopostre.innerHTML="<img src='https://i.pinimg.com/originals/c9/93/b1/c993b17c5c8cc1a07857671f079bae4e.jpg'>";
+                fotopostre.innerHTML="<img src='fotosmenu/po_flan.jpg'>";
             }
             else{
                 if(postre == "postre2"){
                     //window.alert("has escollit el postre2");
-                fotopostre.innerHTML="<img src='https://i.pinimg.com/originals/f5/02/29/f502295dad3df8c9c35dcafffdaa9e51.jpg'>";
+                fotopostre.innerHTML="<img src='fotosmenu/po_xindria.jpg'>";
                 }
                 else{ //window.alert("has escollit el postre3");
-                fotopostre.innerHTML="<img src='https://i.pinimg.com/originals/f7/a0/82/f7a082333a3bc332f2b8222b5ffa258e.jpg'>";
+                fotopostre.innerHTML="<img src='fotosmenu/po_gelat.jpg'>";
                 }
             }
 
@@ -66,56 +66,69 @@
     <style type="text/css">
     .container{
         width: 100%;
-        height: 600px;
+        
     }
     img{width: 200px;
+    }
+    label{
+        font-size:25pt ;
+        color:aqua
     }
     </style>
 
   </head>
   <body>
     <div class="container bg-success">
-    <h1>Menu del dia</h1>
+    <h1 class="text-center">Menu del dia</h1>
             
-                    <div class="row h-25 bg-secondary">
-                      <div class="col">
+                    <div class="row bg-secondary">
+                      <div class="col-sm  border text-center align-middle align-items-center align-self-center">
                         <label for="primer">Primer</label>
                         <br/>
-                        <select id="select_primer" onchange="seleccionar_primer()">
-                            <option value="primer1">primer1</option>
-                            <option value="primer2">primer2</option>
-                            <option value="primer3">primer3</option>
+                        <select id="select_primer" onchange="seleccionar_primer()" class="w-75 align-middle">
+                            <option value="primer1">Canelons</option>
+                            <option value="primer2">Amanida</option>
+                            <option value="primer3">Embotit</option>
 
                         </select>
+                        <br/>
+                        <br/>
                         <div id="fotoprimer">
-                                Foto primer
+                                <br/>
+                                <br/>
                               </div>
                       </div>
-                      <div class="col">
+                      <div class="col-sm border  text-center align-middle align-items-center align-self-center">
                         <label for="segon">Segon</label>
                         <br/>
-                        <select id="select_segon" onchange="seleccionar_segon()">
-                                <option value="segon1">segon1</option>
-                                <option value="segon2">segon2</option>
-                                <option value="segon3">segon3</option>
+                        <select id="select_segon" onchange="seleccionar_segon()" class="w-75 align-middle">
+                                <option value="segon1">Entrecot</option>
+                                <option value="segon2">Paella</option>
+                                <option value="segon3">Sardines</option>
                         </select>
                         <br/>
+                        <br/>
                         <div  id="fotosegon">
-                                Foto segon
+                            <br/>
+                            <br/>
+                                
                               </div>
                       </div>
-                      <div class="col">
+                      <div class="col-sm border  text-center align-middle align-items-center align-self-center">
                         <label for="postre">Postre</label>
                         <br/>
-                        <select id="select_postre" onchange="seleccionar_postre()">
-                                <option value="postre1">postre1</option>
-                                <option value="postre2">postre2</option>
-                                <option value="postre3">postre3</option>
+                        <select id="select_postre" onchange="seleccionar_postre()" class="w-75 align-middle">
+                                <option value="postre1">Flan</option>
+                                <option value="postre2">Xindria</option>
+                                <option value="postre3">Gelat</option>
                                 </select>
                                 <br/>
+                                <br/>
                                 <div class="col-sm" id="fotopostre">
-                                        Foto postre
+                                    <br/>  
+                                    <br/>
                                       </div>
+
                       </div>
                     </div>
                     
