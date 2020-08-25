@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+        function comprovar(){
+            var temp = document.getElementById("text_temp").value;
+            if (temp < 15){             //si es compleix aquesta condicio el tren no continua per l'altra via
+                window.alert("Fred")
+            }
+            else{
+                if (temp < 25){window.alert("Be");
+                }
+                else{window.alert ("Calor");
+                }
+                
+             }
+            
+        }
+        </script>
+        <style type="text/css">
+        #caixeta{
+            height:120px;
+            width: 300px;
+        }
+        </style>
+    </head>
+    <body>
+        <label for="text_temp">Temp:</label>
+        <input type="text" id="text_temp"/>
+        <br/>
+        <br/>
+        <input type="button" value="Comprovar" id="caixeta" onclick="comprovar()"/>
+    </body>
+</html>

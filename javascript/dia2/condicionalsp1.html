@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+        function comprovar_pass(){
+            var pass = document.getElementById("text_password").value
+            if (pass == "123"){          //primer l'estructura de l'if i despres ens preocupem del que va a dins. UN IGUAL SON 2 iguals
+                window.alert("correcte guapo"); //aqui normalment van moltes condicions
+            } 
+            else{
+                window.alert("incorrecte burru");
+            }
+            
+        }
+        /* en un formulari si el nom esta en blanc nomes if: error, else als altres casos
+            == igualtat
+            != diferent o no igual
+            n < 10: n menor de 10
+            n <= 10: n igual o menor de 10
+            n > 10: n mes gran de 10
+            n >= 10: n mes gran o igual a 10
+
+        */
+        </script>
+    </head>
+    <body>
+        <label for="password">Password:</label>
+        <input type="password" id="text_password" />
+        <br/>
+        <input type="button" value="Comprovar" onclick="comprovar_pass()"/>
+    </body>
+</html>

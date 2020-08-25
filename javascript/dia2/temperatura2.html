@@ -1,0 +1,45 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <script language="javascript">
+        function comprovar(){
+            var temp = document.getElementById("text_temp").value;
+
+            var resultat = document.getElementById("resultat");
+
+            if (temp <15){
+                resultat.innerHTML="fa fred <img src='https://i.pinimg.com/originals/73/7b/a2/737ba2afbf165d1d2bede4c075389a0a.jpg'>";
+            }
+            else{
+                if(temp <25){
+                    resultat.innerHTML="s'hi ta be <img src='https://i.pinimg.com/originals/37/21/b4/3721b4bd9d6fc26cf9dcc86c0a7fc157.png'>";
+                }
+                else{
+                    resultat.innerHTML="fa calor <img src='https://i.pinimg.com/originals/aa/1a/ca/aa1aca83b8d352f06ca8b1a1c2dfa0d7.jpg'>"; 
+                }
+            }
+
+        }
+            
+    </script>
+
+    <style type="text/css">
+    #resultat{
+        background-color: aqua;
+        width: 800px;
+        height: 500px;
+    }
+    #resultat img{
+        width:300px;
+    }
+    </style>
+</head>
+<body>
+    <div id="resultat">
+        <label for="text_temp">Temperatura:</label>
+        <input type="text" id="text_temp" name="temp"/>
+        <br/>
+        <input type="button" value="Comprovar" onclick="comprovar()"/>
+    </div>
+</body>
+</html>

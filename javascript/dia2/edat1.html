@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+        function comprovaredat(){
+            var edat = document.getElementById("text_edat").value
+                if (edat >= 18){ //aqui posem nomes el numero perque demanem nomes un numero
+                    window.alert("OleOLE!")
+                }
+                else {
+                    window.alert("a dormir")
+                }
+
+            
+        }
+        
+        </script>
+
+        <style type="text/css">
+        label{
+            border-radius: 5px;
+            background-color: yellow;
+            padding:10px;
+            transition:background-color 5s box-shadow 4s;
+        }
+        label:hover{
+            background-color: aqua;
+            box-shadow: 3px 3px 3px black;
+        }
+        #text_edat{box-shadow: 2px 2px 5px black;
+        border-radius: 5px;
+        height: 20px;}
+        </style>
+    </head>
+    <body>
+        <label for="text_edat">EDAT:</label>
+        <input type="text" name="edat" id="text_edat"/>
+        <br/>
+        <br/>
+        <input type="button" value="comprovar" onclick="comprovaredat()"/>
+    </body>
+</html>
