@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Menu restaurant</title>
+    <script language="javascript">
+        function seleccionar_primer(){
+            var primer = document.getElementById("select_primer").value;
+            if (primer == "primer1"){
+                //window.alert("has escollit el primer1");
+                fotoprimer.innerHTML="<img src='https://i.pinimg.com/originals/fa/25/b1/fa25b1cc0e68cbd0e1f3e39eb979db62.jpg'>";
+            }
+            else{
+                if(primer == "primer2"){
+                    //window.alert("has escollit el primer2");
+                    fotoprimer.innerHTML="<img src='https://i.pinimg.com/originals/8e/eb/90/8eeb90c847f1737bcb33532684b5e30a.jpg'>";
+                }
+                else{
+                    //window.alert("has escollit el primer3");
+                    fotoprimer.innerHTML="<img src='https://i.pinimg.com/originals/db/7c/df/db7cdfe598f599f7fa3d38c4df53b3b5.png'>";
+                }
+            }
+        }
+        function seleccionar_segon(){  
+            var segon = document.getElementById("select_segon").value;
+            if (segon == "segon1"){
+                //window.alert("has escollit el segon1");
+                fotosegon.innerHTML="<img src='https://i.pinimg.com/originals/37/c7/fa/37c7fa4be4101bb80b852a3164450440.png'>";
+            }
+            else{
+                if(segon == "segon2"){
+                    //window.alert("has escollit el segon2");
+                fotosegon.innerHTML="<img src='https://i.pinimg.com/originals/8c/e9/11/8ce9116f8b2d15332bac91296b6ce0df.jpg'>";
+                }
+                else{
+                    window.alert("has escollit el segon3");
+                fotosegon.innerHTML="<img src='https://i.pinimg.com/originals/a8/56/73/a85673d7e66b9582a899edcc6032703b.jpg'>";
+                }
+            }
+        }
+        function seleccionar_postre(){
+            var postre = document.getElementById("select_postre").value;
+            if(postre == "postre1"){
+                //window.alert("has escollit el postre1");
+                fotopostre.innerHTML="<img src='https://i.pinimg.com/originals/c9/93/b1/c993b17c5c8cc1a07857671f079bae4e.jpg'>";
+            }
+            else{
+                if(postre == "postre2"){
+                    //window.alert("has escollit el postre2");
+                fotopostre.innerHTML="<img src='https://i.pinimg.com/originals/f5/02/29/f502295dad3df8c9c35dcafffdaa9e51.jpg'>";
+                }
+                else{ //window.alert("has escollit el postre3");
+                fotopostre.innerHTML="<img src='https://i.pinimg.com/originals/f7/a0/82/f7a082333a3bc332f2b8222b5ffa258e.jpg'>";
+                }
+            }
+
+        }
+    </script>
+    
+    <style type="text/css">
+    .container{
+        width: 100%;
+        height: 600px;
+    }
+    img{width: 200px;
+    }
+    </style>
+
+  </head>
+  <body>
+    <div class="container bg-success">
+    <h1>Menu del dia</h1>
+            
+                    <div class="row h-25 bg-secondary">
+                      <div class="col">
+                        <label for="primer">Primer</label>
+                        <br/>
+                        <select id="select_primer" onchange="seleccionar_primer()">
+                            <option value="primer1">primer1</option>
+                            <option value="primer2">primer2</option>
+                            <option value="primer3">primer3</option>
+
+                        </select>
+                        <div id="fotoprimer">
+                                Foto primer
+                              </div>
+                      </div>
+                      <div class="col">
+                        <label for="segon">Segon</label>
+                        <br/>
+                        <select id="select_segon" onchange="seleccionar_segon()">
+                                <option value="segon1">segon1</option>
+                                <option value="segon2">segon2</option>
+                                <option value="segon3">segon3</option>
+                        </select>
+                        <br/>
+                        <div  id="fotosegon">
+                                Foto segon
+                              </div>
+                      </div>
+                      <div class="col">
+                        <label for="postre">Postre</label>
+                        <br/>
+                        <select id="select_postre" onchange="seleccionar_postre()">
+                                <option value="postre1">postre1</option>
+                                <option value="postre2">postre2</option>
+                                <option value="postre3">postre3</option>
+                                </select>
+                                <br/>
+                                <div class="col-sm" id="fotopostre">
+                                        Foto postre
+                                      </div>
+                      </div>
+                    </div>
+                    
+                  
+          </div>
+
+
+
+     </body>
+</html>

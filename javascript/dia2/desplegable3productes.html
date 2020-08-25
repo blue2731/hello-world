@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script language="javascript">
+            function seleccionar(){
+                var prod = document.getElementById("select_producte").value;
+                if (prod == "blanc"){
+                    resultat.innerHTML="Cap producte seleccionat"
+                }
+
+                
+                else{
+                    if (prod == "bici"){
+                    resultat.innerHTML="<img src='https://i.pinimg.com/originals/e7/75/14/e77514fa53b47a82e94f924b5a9acd60.jpg'>"
+                    }
+                    else{
+                        if (prod == "patinet"){
+                        resultat.innerHTML="<img src='https://i.pinimg.com/originals/f1/96/4e/f1964e52d61198f202260458a4fcddb7.jpg'>"
+                         }
+                        else{resultat.innerHTML="<img src='https://i.pinimg.com/originals/a5/c8/c7/a5c8c7dc8d821eec9c5cf7d5f15db7f5.jpg'>"
+                         }
+                        }
+                }
+            }
+
+
+        </script>
+        <style type="text/css">
+        #container{
+            width: 400px;
+            height:50px;
+        }
+        #select_producte{
+            width: 200px;
+            height: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20pt;
+            margin:2px;
+        }
+        img{ height: 700px;
+        }
+        #boto1{height: 40px;
+                padding:0;
+               width:100px;
+              border-width: 1px;
+              border-radius: 5px;
+               }
+        #resultat{width: 500px;
+            height: 500px;
+            background-color: bisque;
+            }
+        
+        
+        </style>
+    </head>
+    <body>
+        <!-- onchange="seleccionar()" es pot posar a dins del select i ens estalviem del botó amb l'onclick-->
+            <div id="container">
+                <select id="select_producte">
+                <option value="blanc"></option>
+                <option value="bici">Bicicleta</option>
+                <option value="patinet">Patinet</option>
+                <option value="producte3">Skate</option>
+            </select>
+            <input type="button" value="seleccionar" id="boto1" onclick="seleccionar()"/>
+                 </div>
+            <div id="resultat">
+        </div>
+    </body>
+</html>
