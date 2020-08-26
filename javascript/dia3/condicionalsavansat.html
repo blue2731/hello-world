@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>SWITCH</title>
+    <script language="javascript">
+        function comprovardia(){
+            var d = new Date();
+            var diasetmana = d.getDay();
+            switch(diasetmana){
+                case 0:
+                case 6: //aixi es fa per posar que qualsevol dels dos casos sigui cap de setmana. sempre amb valors exactes
+                    window.alert("Cap de setmana");
+                    break; 
+                default:
+                    window.alert("Dia laborable");                     //amb el break si el dia es diumenge no et dira tota la resta de coses
+                /*case 1:
+                    window.alert("Dilluns")
+                    break;
+                case 2:
+                    window.alert("Dimarts")
+                    break;
+                case 3:
+                    window.alert("Dimecres")
+                    break;
+                case 4:
+                    window.alert("Dijous")
+                    break;
+                case 5:
+                    window.alert("Divendres")
+                    break;
+                //case 6:
+                    //window.alert("Dissabte")
+                    //break;*/
+
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Comprovar" onclick="comprovardia()"/>
+</body>
+</html>
