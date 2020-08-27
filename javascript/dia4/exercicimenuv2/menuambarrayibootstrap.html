@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Menu restaurant</title>
+    <script language="javascript">
+        function seleccionar_primer(){
+            var primers = [
+                "fotosmenu/pr_canelons.jpg",
+                "fotosmenu/pr_amanida.jpg",
+                "fotosmenu/pr_embotit.jpg"
+            ];
+            var primer = document.getElementById("select_primer").value;
+            var capa = document.getElementById("fotoprimer");
+            
+            if( primer == ""){
+                capa.innerHTML="No has seleccionat cap primer"
+            }
+            else{
+                capa.innerHTML="<img src='"+ primers[primer] +"'/>"  //assegurar-nos de que les variables coincideixin (les que han de coincidir)
+            }
+        }
+
+        function seleccionar_segon(){
+            var segons = [
+                "fotosmenu/se_entrecot.jpg",
+                "fotosmenu/se_paella.jpg",
+                "fotosmenu/se_sardines.jpg"
+            ];
+
+            var segon = document.getElementById("select_segon").value;
+            var capa = document.getElementById("fotosegon");
+            if(segon == ""){
+                capa.innerHTML="No has seleccionat cap segon"
+            }
+            else{
+                capa.innerHTML="<img src='"+ segons[segon] +"'/>"
+            }
+
+        }
+
+        function seleccionar_postre(){
+            var postres = [
+                "fotosmenu/po_flan.jpg",
+                "fotosmenu/po_xindria.jpg",
+                "fotosmenu/po_gelat.jpg"
+            ]
+            var postre = document.getElementById("select_postre").value;
+            var capa = document.getElementById("fotopostre");
+            if(postre == ""){
+                capa.innerHTML="No has seleccionat postre"
+            }
+            else{
+                capa.innerHTML="<img src='"+ postres[postre] +"'/>"
+            }
+        }
+
+
+    </script>
+    
+    <style type="text/css">
+    .container{
+        width: 100%;
+        
+    }
+    #menu{
+        height: 200px;
+    }
+    #fotosmenu{
+        height:300px;
+    }
+    img{width: 200px;
+    }
+    label{
+        font-size:25pt ;
+        color:aqua
+    }
+    </style>
+
+  </head>
+  <body>
+    <div class="container bg-success">
+    <h1 class="text-center">Menu del dia</h1>
+                    <!-- select menu, primer, segon, postre-->
+                    <div class="row bg-secondary" id="menu">
+
+                        <!-- col 1 amb els primers-->
+                      <div class="col-sm  border text-center align-middle align-items-center align-self-center">
+                        <label for="primer">Primer</label>
+                        <br/>
+                        <select id="select_primer" onchange="seleccionar_primer()" class="w-75 align-middle">
+                            <option value=""></option>
+                            <option value="0">Canelons</option>
+                            <option value="1">Amanida</option>
+                            <option value="2">Embotit</option>
+                        </select>
+                      </div>
+
+                      <!-- col 2 amb els segons-->
+                      <div class="col-sm border  text-center align-middle align-items-center align-self-center">
+                        <label for="segon">Segon</label>
+                        <br/>
+                        <select id="select_segon" onchange="seleccionar_segon()" class="w-75 align-middle">
+                                <option value=""></option>
+                                <option value="0">Entrecot</option>
+                                <option value="1">Paella</option>
+                                <option value="2">Sardines</option>
+                        </select>
+                      </div>
+
+                     <!-- col 3 amb els postres-->
+                      <div class="col-sm border  text-center align-middle align-items-center align-self-center">
+                        <label for="postre">Postre</label>
+                        <br/>
+                        <select id="select_postre" onchange="seleccionar_postre()" class="w-75 align-middle">
+                                <option value=""></option>
+                                <option value="0">Flan</option>
+                                <option value="1">Xindria</option>
+                                <option value="2">Gelat</option>
+                                </select>
+                      </div>
+
+                    </div>
+
+                    <!-- fotos menu-->
+                    <div class="row bg-warning" id="fotosmenu">
+                        <div class="col-sm align-self-center align-items-center text-center border" id="fotoprimer"></div>
+                        <div class="col-sm align-self-center align-items-center text-center border" id="fotosegon"></div>
+                        <div class="col-sm align-self-center align-items-center text-center border" id="fotopostre"></div>
+                    </div>
+                    
+            <!-- el div de sota és del container, el de sobre el de la row-->      
+          </div>
+
+<!-- align-self-center al col es aliniar verticalment-->
+
+     </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Arrays practica data</title>
+    
+    <script language="javascript">
+        var mesos = [ //els arrays poden anar a fora perque no s'actualitzaran cada cop
+         "de Gener",
+         "de Febrer",
+         "de Març",
+         "d'Abril",
+         "de Maig",
+         "de Juny",
+         "de Juliol",
+         "d'Agost",
+         "de Septembre",
+         "d'Octubre",
+         "de Novembre",
+         "de Desembre"
+     ];
+
+     var dies = [
+         "Diumenge",
+         "Dilluns",
+         "Dimarts",
+         "Dimecres",
+         "Dijous",
+         "Divendres",
+         "Dissabte"
+     ];
+        function comprovarData(){ //no oblidar que tot aixo va associat al boto comprovar data
+     var d = new Date();        // si es vol actualitzar va a dins. d= new Date (); s'ha d'actualitzar i va a dins
+     var dia = d.getDay();          // els arrays van a fora perque no canvien ni s'actualitzen
+     var mes = d.getMonth();        //DINS O FORA i per que??????
+     var numdia = d.getDate();
+     var any = d. getFullYear();
+
+     // arrays en plural i variables en singular. DIES[DIA] per exemple. MESOS[MES]
+
+     window.alert(" Avui som " + dies[dia] + " " + numdia + " " + mesos[mes] + " del " + any)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Comprovar data" onclick="comprovarData()"/>
+</body>
+</html>

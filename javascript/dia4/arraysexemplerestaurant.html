@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Arrays restaurant</title>
+    <script language="javascript">
+        function triarPlat(){
+            var plats = [
+                "fotosplats/macarrons.jpg",   //aqui posem les rutes relatives de la foto, o el nom de la foto si esta dins la mateixa carpeta
+                "fotosplats/canelons.jpg",
+                "fotosplats/callos.jpg",
+                "fotosplats/amanida.jpg"
+                 ];
+            var plat= document.getElementById("plat").value; //per agafar el valor de les nostres opcions, el value
+
+            var capa= document.getElementById("capafoto");
+            //capa.innerHTML="<img src='fotosplats/macarrons.jpg'/>" volem passar d'element estatic a dinamic
+            capa.innerHTML="<img src='"+plats[plat]+"'/>"  //per a que es vegi la foto posem la direccio on aniria el nom de la foto com a
+                                                                //"+ plats[plat] +" per a que ho agafi com a text
+            if(plat == ""){
+                capa.innerHTML="no has escollit plat, siusplau escull un"
+            }
+        }
+    
+    </script>
+    <style type="text/css">
+    #capafoto{
+        width: 400px;
+        height: 300px;
+        margin:50px auto;
+        background-color: rgb(255, 255, 255);
+    }
+    </style>
+</head>
+<body>
+    <select id="plat" onchange="triarPlat()">
+        <option value=""></option>
+        <option value="0">Macarrons</option>
+        <option value="1">Canelons</option>
+        <option value="2">Callos</option>
+        <option value="3">Amanida</option>
+
+    </select>
+    <div id="capafoto">
+
+    </div>
+</body>
+</html>
