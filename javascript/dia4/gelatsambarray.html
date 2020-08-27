@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>arrays gelat</title>
+        <script language="javascript">
+            var gelat = [
+                [["fotosgelats/maduixaconopetit.jpg", "fotosgelats/maduixaconomitja.jpg", "fotosgelats/maduixaconogran.jpg"], ["fotosgelats/maduixatarrinapetit.jpg", "fotosgelats/maduixatarrinamitja.jpg", "fotosgelats/maduixatarrinagran.jpg"], ["fotosgelats/maduixaespecialpetit.jpg","fotosgelats/maduixaespecialmitja.jpg" ,"fotosgelats/maduixaespecialgran.jpg" ] ],
+                [ ["fotosgelats/vainillaconopetit.jpg", "fotosgelats/vainillaconomitja.jpg", "fotosgelats/vainillaconogran.jpg"], ["fotosgelats/vainillatarrinapetit.jpg", "fotosgelats/vainillatarrinamitja.jpg", "fotosgelats/vainillatarrinagran.jpg"], ["fotosgelats/vainillaespecialpetit.jpg","fotosgelats/vainillaespecialmitja.jpg" ,"fotosgelats/vainillaespecialgran.jpg" ]],
+                [ ["fotosgelats/xocolataconopetit.jpg", "fotosgelats/xocolataconomitja.jpg", "fotosgelats/xocolataconogran.jpg"], ["fotosgelats/xocolatatarrinapetit.jpg", "fotosgelats/xocolatatarrinamitja.jpg", "fotosgelats/xocolatatarrinagran.jpg"], ["fotosgelats/xocolataespecialpetit.jpg","fotosgelats/xocolataespecialmitja.jpg" ,"fotosgelats/xocolataespecialgran.jpg" ]],
+                [ ["fotosgelats/llimonaconopetit.jpg", "fotosgelats/llimonaconomitja.jpg", "fotosgelats/llimonaconogran.jpg"], ["fotosgelats/llimonatarrinapetit.jpg", "fotosgelats/llimonatarrinamitja.jpg", "fotosgelats/llimonatarrinagran.jpg"], ["fotosgelats/llimonaespecialpetit.jpg","fotosgelats/llimonaespecialmitja.jpg" ,"fotosgelats/llimonaespecialgran.jpg" ]]
+            ];
+            
+            
+            function select_gelat(){
+                var gust = document.getElementById("gust").value;
+                 var tipus = document.getElementById("tipus").value;
+                 var mida = document.getElementById("mida").value;
+                 var capa = document.getElementById("fotogelat")
+                  if(gust == ""){
+                    capa.innerHTML="Siusplau selecciona el gust per continuar"
+                     }
+            
+                     
+              
+                else if(tipus ==""){
+                capa.innerHTML="Siusplau selecciona el tipus per continuar"
+                    }
+                else if(mida ==""){
+                    capa.innerHTML="Siusplau selecciona la mida per continuar"
+                }
+
+                else{ //es aconsellable posar una imatge fixe per començar
+                    capa.innerHTML= "<img src='" + gelat[gust][tipus][mida]+ "'/>"
+                }
+                
+            }
+        </script>
+    
+    
+    <style type="text/css">
+    #container{
+        height: 600px;
+
+    }
+    .col-4{
+        height: 200px;
+    }
+    #capafoto{
+        padding-top:50px;
+    }
+    
+    </style>
+  </head>
+  <body>
+        <div class="container bg-success" id="container">
+                <h1>Gelats</h1>
+                <div class="container">
+                        <div class="row">
+                            <!--gust-->
+                          <div class="col-4 border">
+                              <label for="gust">Gust</label>
+                              <select id="gust" onchange="select_gelat()">
+                                <option value=""></option>
+                                <option value="0">Maduixa</option>
+                                <option value="1">Vainilla</option>
+                                <option value="2">Xocolata</option>
+                                <option value="3">Llimona</option>
+                              </select>
+                            </div>
+                          <!--tipus-->
+                          <div class="col-4 border">
+                                <label for="tipus">Tipus</label>
+                                <select id="tipus" onchange="select_gelat()">
+                                  <option value=""></option>
+                                  <option value="0">Cono</option>
+                                  <option value="1">Tarrina</option>
+                                  <option value="2">Especial</option>
+                                </select>
+                          </div>
+                          <div class="col-4 border">
+                                <label for="mida">Mida</label>
+                                <select id="mida" onchange="select_gelat()">
+                                  <option value=""></option>
+                                  <option value="0">Petit</option>
+                                  <option value="1">Mitja</option>
+                                  <option value="2">Gran</option>
+                                </select>
+                          </div>
+                          
+                        </div>
+                        <!--fotos-->
+                        <div class="row justify-content-center" id="capafoto">
+                                <div class="col-6 align-self-center align-items-center text-center border" id="fotogelat">
+                                   
+                                  </div>
+                                </div>
+                      </div>
+              </div>
+
+    
+  </body>
+</html>
