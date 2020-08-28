@@ -22,21 +22,21 @@
             var fotos = ["tick.png","cross.png"];
             var capa_puntuacio = document.getElementById("puntuacio");
             var respostes = [dies[diasetmana],dianum, mesos[mes]];
-            var puntuacio=0;
+            var nota=0; //aqui guardem que nota comensa per 0
             for(i=0;i<respostes.length;i++){
             var resposta= document.getElementById("resposta"+i).value;
             var capa= document.getElementById("fotoresposta"+i);
             
                 if(resposta == respostes[i]){
                     capa.innerHTML="<img src='"+fotos[0]+"'/>";
-                    capa_puntuacio.innterHTML="Has tret un";
-                    puntuacio++
+                    nota++;;
                 }
                 else{
                     capa.innerHTML="<img src='"+fotos[1]+"'/>"
                 }
             }
-            capa_puntuacio.innterHTML="Has tret un"+puntuacio;
+            capa_puntuacio.innerHTML=nota;
+            //window.alert(nota);
         }
     </script>
     <style type="text/css">

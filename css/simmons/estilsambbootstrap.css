@@ -1,18 +1,77 @@
-:root{ --colorlletrablau:#0A60B0}
+:root{ --colorlletrablau:#0A60B0
+}
+body{
+    box-sizing: border-box;
+}
 #nextstep{
         height: 200px;
-    background-color:#00A881}
+    background-color:#00A881
+}
 
-.container{height: 100%;
+.container-lg{height: 100%;
             }
-#foot{height: 400px;
-    float: right;}
+#foot{height: 497px; 
+    padding:60px 0 0 0;
+    }
+#rowfoot, .colfoott{
+    height: 100%;
+   
+}
+.colfoott{
+    padding: 0 20px;
+}
 #simmonslogo{width: 100%}
-a{color:var(--colorlletrablau)}
+a{color:var(--colorlletrablau);
+}
+.footer-main__logo{
+    margin:0 0 50px 0px;
+}
+.adressphone p{
+    margin:0 0 30px 40px;
+    font-size: 20px;
+}
+.fab{
+    background-color: #00A881;
+    color: #fff;
+    display: block;
+    width: 42px;
+    height: 41px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 10px;
+}
 .icones{
-    width:50px;
+    width:28px;
     float: left;
 }
-i{
-    border-radius: 5px;
+ul{list-style-type: none;
+    padding:0;
+}
+#iconesfooter li{
+    position: relative;
+    float: left;
+    padding: 0 8px 8px 0;
+}
+#iconesfooter{
+    margin:0 0 50px 0;
+}
+
+#undergrad{
+    margin: 0 5px;
+    padding: 0 20px; 
+}
+.resourcesandmore{
+    margin:0 0 60px 0;
+    padding: 0 20px;
+}
+.resourcesandmore h2{
+    font-size: 15px;
+}
+
+.copyright{
+    position: relative;
+    float: left;
+    padding: 0 9px;
+
 }
