@@ -1,9 +1,12 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 #container{margin:2% auto;
             width: 1320px;
             height:600px;
             }
 
-#welcome{background-color: rgb(79, 173, 67);
+#welcome{background-color: #4CAF50;
             padding: 12px;
             margin:0;    
             color:white;
@@ -32,14 +35,14 @@
                     margin:0;
                 padding:0}
             
-            li{border:1px solid grey;
-                background-color: rgb(241, 239, 239);
+            li{border:1px solid #d4d4d4;
+                background-color: #f1f1f1;
                 padding:6px 1px;
                 margin:3px 7px;
                 margin-left:0;
                 border-radius: 5px; }
             #estil1{margin-top:0;
-                    background-color: rgb(79, 173, 67);
+                    background-color: #4CAF50;
                     color:white}
     
                     li:hover{background-color:white }
@@ -65,7 +68,7 @@
     float:left; 
     box-sizing: border-box;
     padding:7px 30px 10px 10px;
-    background-color: rgb(75, 143, 231);
+    background-color:#32a4e7;
     color:white;
     line-height: 160%;
     border-radius: 5px; 
@@ -73,12 +76,12 @@
     }
 
 
-#lastthing{border:1px solid grey;
+#lastthing{border:1px solid #d4d4d4;
         height:50px;
             margin-top:10px;
         
         padding:10px;
-        background-color:rgb(241, 239, 239);
+        background-color:#f1f1f1;
         border-radius: 5px; 
     }
     #lastthing p{font-size: 9pt;

@@ -5,7 +5,14 @@
 
 .container{height: 100%;
             }
-#foot{height: 400px;}
+#foot{height: 400px;
+    float: right;}
 #simmonslogo{width: 100%}
 a{color:var(--colorlletrablau)}
-.rounded-circle{background-color: #00A881}
+.icones{
+    width:50px;
+    float: left;
+}
+i{
+    border-radius: 5px;
+}
