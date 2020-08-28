@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script language="javascript">
+                
+                function calcular(){
+                var numero= document.getElementById("numero_text").value;
+                var capa= document.getElementById("resultat");
+                //window.alert(numero)
+                
+                //capa.innerHTML+="<table border='1' width='600px'>"; NO l'agafa be, tanca la taula abans d'arribar al loop
+                document.write("<table border='1' width='600px'>")
+                var i=0;
+                for(i=0;i<11;i++){
+                    document.write("<tr><td>"+numero+"</td><td>"+i+"</td><td>"+(numero*i)+"</td></tr>")
+                    //capa.innerHTML+="<tr><td>"+numero+"</td><td>"+i+"</td><td>"+(numero*i)+"</td></tr>";
+                    }
+                document.write("</table>")
+                   // capa.innerHTML+="</table>";
+                }
+            </script>
+        <style type="text/css">
+        #resultat{
+            width: 500px;
+            height: 400px;
+            background-color: aquamarine;
+        }
+        </style>
+    </head>
+    <body>
+        <label for="numero_text">NUM:</label>
+        <input type="number" id="numero_text"/>
+        <br/>
+        <input type="button" value="Calcular!" onclick="calcular()"/>
+        <br/>
+        <div id="resultat"></div>
+    </body>
+</html>
