@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bucles automatitzar arrays i capes p1</title>
+        <script language="javascript">
+            function mostrar(){
+                var fotos= ["pr_amanida.jpg","pr_embotit.jpg","pr_canelons.jpg"];
+                var i=0;
+                var capa= document.getElementById("capa"+i);
+                
+                for(i=0;i<fotos.length;i++){
+                    capa.innerHTML+="<img src='"+fotos[i]+"'/>";
+                    
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="mostrar primers" onclick="mostrar()"/>
+        <div id="capa0"></div>
+        <div id="capa1"></div>
+        <div id="capa2"></div>
+    </body>
+</html>
