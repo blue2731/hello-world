@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script language="javascript">
+        var dies=["dilluns","dimarts","dimecres","dijous","divendres"];
+        //var dies=[]; //el mateix que var dies= new Array(); pero aixo del new array esta caducat
+        //potser volem crear una array buida per anar afegint valors dinamics
+            //ara afegirem el cap de setmana en varis llocs
+        var i=0;
+        //dos metodes que funcionen:
+        dies.push("dissabte");//aquest metode afegeix elements al final de la matriu
+        dies.unshift("diumenge"); //aquest posa un nou element 0
+        dies.pop(); //elimina l'ultim element
+        dies.shift(); //elimina el primer element
+        dies.splice(2,0,"patata","peres"); //posicio, elements a esborrar, que vols afegir(, una altra cosa)
+        dies.splice(3,1); // aqui hem tret el valor "peres" de l'array
+        //si hem de fer un push, es mes llegible un push que un splice per fer el push
+        for(i=0;i<dies.length;i++){
+            document.write(dies[i]);
+            document.write("</br>");
+        }
+            
+
+        </script>
+    </body>
+</html>

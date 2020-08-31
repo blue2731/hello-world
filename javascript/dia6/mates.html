@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <script language="javascript">
+       function calcular(){
+           //var num= Math.random(); //entre 0 i 1, poc util en el nostre cas
+           //var num= (Math.random()*5); //ara en fara un numero entre 0 i 5. davant del math random hi va 3 maneres de arrodonir
+           //var num= Math.round(Math.random()*5); // aquest dona mitja probabilitat per arrodonir a 5 i a 0.
+           //var num= Math.ceil(Math.random()*5)// arrodoneix cap al valor seguent (1-5)
+           var num= Math.floor(Math.random()*5)// arrodoneix cap al valor inferior (0-4)
+          window.alert(num);
+       }
+    </script>
+
+  </head>
+  <body>
+   <input type="button" value="click!" onclick="calcular()"/>
+   </body>
+</html>

@@ -1,0 +1,55 @@
+//3 quadres per escriure numeros de 1 al 9. i un boto de comprovar (amb un numero aleatori generalt) i que surti al costat de la caixa una flexa amunt, abaix o igual. Podem posar un titol on sorti: tens 4 intents que vagi baixant. si guanyes abans que surti felicitats! si et quedes sense intents. game over
+se sortegen els numeros per separat
+//boto de sortejar, capa on diu resultat (sorteix numero loteria, 6 numeros fins al 1-49): Array i numeros ordenats
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Examen formulari bucles</title>
+    <script language="javascript">
+        var numsloteria= [];
+        var i=0;
+        
+        function sortejar(){
+            var capa=document.getElementById("puntuacio");
+                capa.innerHTML="";
+            
+            for(i=0;i<6;i++){
+                var numloteria=numsloteria.push(Math.floor(Math.random()*49));
+                capa.innerHTML+=numsloteria[i] + "   "
+                
+            }
+            //numsloteria.sort(); //hauria de fer algo
+        }
+        
+        //window.alert(numsloteria)
+    </script>
+    <style type="text/css">
+        #puntuacio{
+            width: 600px;
+            height: 50px;
+            
+        }
+    </style>
+
+  </head>
+  <body><div class="container">
+         <h1>Sorteig</h1>   
+              <input class="btn btn-primary btn-lg" type="button" value="Sortejar" onclick="sortejar()"/>
+              <br/>
+              La combinacio guanyadora és:
+              <div class="bg-info" id="puntuacio"> </div>
+      </div>
+   
+
+      
+     
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <script language="javascript">
+        var jugadors=[]; //a fora de la funcio perque si no es perd el contingut cada cop que es corre la funcio
+        var i=0;
+        
+        function afegir(){
+            var jugador=document.getElementById("nomjugador").value;
+            var capa=document.getElementById("llistajugadors");
+            jugadors.push(jugador);
+            capa.innerHTML=""; //es la manera de que es borri la capa abans de posarla tota un altre cop
+        
+
+        for(i=0;i<jugadors.length;i++){
+            
+            capa.innerHTML+= jugadors[i] + "</br>"    
+            //window.alert(jugadors[i]);
+            }
+        }
+        // aqui es pot afegir una funcio que tregui un element per exemple
+
+    </script>
+
+  </head>
+  <body>
+    <h1>Jugador:</h1>
+    
+    <input type="text" id="nomjugador"/>
+  </br>
+    <input type="button" value="afegir" onclick="afegir()"/>
+    <div id="llistajugadors">
+
+    </div>
+   </body>
+</html>

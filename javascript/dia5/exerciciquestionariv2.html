@@ -10,13 +10,7 @@
 
     <title>Examen formulari bucles</title>
     <script language="javascript">
-           var preguntes = ["Quin dia és avui? (minuscula i catala)","Quin numero de dia és avui? (minuscula i catala)","En quin mes estem? (minuscula i catala)","Quin color de semafor deixa passar?"];
-           var i=0;
-           for(i=0;i<preguntes.length;i++){
-            var capa_pregunta= document.getElementById("pregunta"+i);
-            capa_pregunta.innerHTML=preguntes[i];
-           } //no funciona aqui a dalt, dins de l'altra funcio si, pero nomes quan comprovo respostes
-           
+ 
         function comprovar_resposta(){
            
             var d= new Date();
@@ -25,7 +19,7 @@
             var mes= d.getMonth();
             var dies= ["diumenge","dilluns","dimarts","dimecres","dijous","divendres","dissabte"];
             var mesos=["gener","febrer","març","abril","maig","juny","juliol","agost","septembre","octubre","novembre","desembre"];
-            var colorssemafor= ["Vermell", "Taronja", "Verd"];
+            var colorssemafor= ["vermell", "taronja", "verd"];
             var fotos = ["tick.png","cross.png"];
             var capa_puntuacio = document.getElementById("puntuacio");
             var respostes = [dies[diasetmana],dianum, mesos[mes], colorssemafor[2]];
@@ -142,9 +136,9 @@
                   <div class="col-sm-8 border resposta">
                     <select id="resposta3"> <!--onchange="passar()", veure si no és necessari-->
                         <option value=""> </option>
-                        <option value="0">Vermell</option>
-                        <option value="1">Taronja</option>
-                        <option value="2">Verd</option>
+                        <option value="vermell">Vermell</option>
+                        <option value="taronja">Taronja</option>
+                        <option value="verd">Verd</option>
                     </select>
                   </div>
                   <div class="col-sm-4 resposta" id="fotoresposta3">
@@ -160,7 +154,16 @@
       </div>
    
 
-
+      <script language="javascript">
+                var preguntes = ["Quin dia és avui? (minuscula i catala)","Quin numero de dia és avui? (minuscula i catala)","En quin mes estem? (minuscula i catala)","Quin color de semafor deixa passar?"];
+           var i=0;
+           for(i=0;i<preguntes.length;i++){
+            var capa_pregunta= document.getElementById("pregunta"+i);
+            capa_pregunta.innerHTML=preguntes[i];
+           } //no funciona aqui a dalt, dins de l'altra funcio si, pero nomes quan comprovo respostes. quan anava a dalt.
+           //aixo ha d'anar abaix dsps de carregar la plana
+           
+      </script>
      
     </body>
 </html>
