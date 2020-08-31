@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Exercici bucles</title>
+    <script language="javascript">
+    
+    i=0;
+    
+    function doblar(){
+        var numero = document.getElementById("num").value;
+        var n=1;
+        //window.alert(numero) si l'alert es posa a fora, dona tots els numeros de cop, si es posa a dins, cada cop que fa bucle ensenya
+        var capa0=document.getElementById("resultat0");
+        /*for(i=0;i<numero;i++){
+            n=n*2;
+            
+            capa0.innerHTML+=n + "</br>"; 
+            
+        }*/
+        while(i<numero){
+            n=n*2;
+            capa0.innerHTML+=n + "</br>";
+            i++;
+        }
+        
+        
+    }
+    function doblarlim(){
+        var limit= document.getElementById("numlim").value;
+        capa1=document.getElementById("resultat1");
+        var n=1;
+        while(n<limit){
+            n=n*2; 
+         capa1.innerHTML+=n +"</br>";
+         i++
+        }
+    }
+
+    function factorial(){
+        var num=1;
+        var factor=document.getElementById("num1").value;
+        var capa2=document.getElementById("resultat2");
+        while(i<factor){
+            num=factor*(factor-i);
+            capa2.innerHTML+=num+"</br>";
+            i++;
+        }
+
+    }
+    
+    </script>
+
+
+
+    <style type="text/css">
+    .container{
+        height: 800px;
+    }
+    .resultat{
+        height: 50%;
+        width: 80%;
+    }
+    </style>
+  </head>
+  <body>
+        <div class="container ">
+                <div class="container">
+                        <div class="row h-50 bg-success ">
+                          <div class="col-sm">
+                            Dobles
+                            <label for="num">Numero:</label>
+                            <input type="text" id="num"/>
+                            </br>
+                            <input type="button" value="Doblar" onclick="doblar()"/>
+                            </br>
+                            </br>
+                            <div class="resultat bg-info" id="resultat0">
+
+                            </div>
+                          </div>
+                          <div class="col-sm">
+                            Factorial
+                            <label for="num1">Numero:</label>
+                            <input type="text" id="num1"/>
+                            </br>
+                            <input type="button" value="factorial" onclick="factorial()"/>
+                            </br>
+                            </br>
+                            <div class="resultat bg-info" id="resultat2">
+
+                            </div>
+                          </div>
+                          <div class="col-sm">
+                            Fibonacci
+                          </div>
+                        </div>
+                        
+                        <div class="row h-50 bg-warning">
+                                <div class="col-sm">
+                                  Dobles limit
+                                  <label for="numlim">Numero:</label>
+                                    <input type="text" id="numlim"/>
+                                    </br>
+                                    <input type="button" value="Doblar limit" onclick="doblarlim()"/>
+                                    </br>
+                                    </br>
+                            <div class="resultat bg-info" id="resultat1">
+
+                            </div>
+                                </div>
+                                <div class="col-sm">
+                                  Factorial limit
+                                  <label for="numlim1">Numero:</label>
+                                  <input type="text" id="numlim1"/>
+                                  </br>
+                                  <input type="button" value="factorial limit " onclick="factoriallim()"/>
+                                  </br>
+                                  </br>
+                                  <div class="resultat bg-info" id="resultat3">
+                                      
+                                  </div>
+                                </div>
+                                <div class="col-sm">
+                                  Fibonacci limit
+                                </div>
+                              </div>
+                </div>
+        </div>
+
+    </body>
+</html>
+<!--//dobles començant per 1. multiplica els cops que escrigui l'usuari amb boto per comprovar
+//limimt "40000". al apretar el boto et diu l'ultim resultat de doblar fins arribar a 40000, sense passarse
+
+//factorial 5!, multipicar per 5x 4 x3x 2x 1x.
+//numero "10": factorial
+//limit donar el factorial mes petit que el numero que li marco
+
+//fibonacci.
+//numero, que surti el x numero de la serie de fibonacci
+//limit donar el numero de la serie a la que esta  x alla-->

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Page Title</title>
+  
+</head>
+<body>
+   <script language="javascript">
+       var jugadors = ["miquel", "anna", "claudia","marina","dani"];
+       var i= 0;
+       jugadors.reverse();   //per imprimir la matriu del reves, oju que s'ha d'arreglar despres
+
+                    //for(i=jugadors.length-1; i>=0;i--){                  //aixo es fa perque vagi al reves sense el jugadors.reverse
+        for(i=0;i<jugadors.length;i++){
+           document.write(jugadors[i]);
+           document.write("</br>")
+       }
+
+       jugadors.reverse(); //es torna a fer per tenir l'array be un altre cop
+   
+   </script> 
+</body>
+</html>
