@@ -1,0 +1,28 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title> ELSE IF</title>
+    
+    <script language="javascript">
+    function comprovarvacances(){
+        var d = new Date();
+        var mes = d.getMonth(); // si volem canviar de mes despres del () posem un "+1" per exemple
+        if (mes == 6){
+            window.alert("falta poc per les vacances")
+        }
+        else if(mes == 7){
+            window.alert("vacances!!")
+        }
+        else if (mes == 8){
+            window.alert("vacances acabades.. em sap greu")
+        }
+        else{
+            window.alert("encara falta")
+        }
+    }
+    </script>
+</head>
+<body>
+    <input type="button" value="Tinc vacanes?" onclick="comprovarvacances()"/>
+</body>
+</html>

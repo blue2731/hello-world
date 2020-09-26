@@ -1,0 +1,84 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <script language="javascript">
+        function comprovarestacio(){
+            var d = new Date();
+            var mes = d.getMonth();
+            var dia = d.getDate();
+            if((mes >= 0) && (mes <2)){ //si volem posar condicionals al mes 2 no hem d'incloure aqui el mes 2
+                resultat.innerHTML="<img src='https://i.pinimg.com/originals/90/2d/db/902ddbd47105a9c0e76d1a53085d524f.jpg'/>"
+            }
+            else if(mes== 11){ //aconseguit
+                 if(dia > 20){
+                // else if((mes == 11) && (dia > 20)){   Aixo no funciona 
+                resultat.innerHTML="<img src='https://i.pinimg.com/originals/90/2d/db/902ddbd47105a9c0e76d1a53085d524f.jpg'/>"
+                }
+                    else{resultat.innerHTML="<img src='https://i.pinimg.com/originals/cb/88/5c/cb885c11d88d84cc465280a85d75d79d.jpg'/>"
+                    }
+            }
+            else if(mes== 2){ //funciona
+                if(dia > 20){
+                    
+                    resultat.innerHTML="<img src='https://i.pinimg.com/originals/a2/58/f6/a258f6d94f1981a7c31f61558426174c.jpg'/>"
+                }
+                else{
+                    resultat.innerHTML="<img src='https://i.pinimg.com/originals/90/2d/db/902ddbd47105a9c0e76d1a53085d524f.jpg'/>"
+                }
+            }
+            
+                
+            else if(( mes >= 3) && (mes < 5)){
+                resultat.innerHTML="<img src='https://i.pinimg.com/originals/a2/58/f6/a258f6d94f1981a7c31f61558426174c.jpg'/>"
+            }
+            else if(mes == 5){ //funciona
+                if(dia > 20){resultat.innerHTML="<img src='https://i.pinimg.com/originals/19/43/a0/1943a0889d1b3a63232eb857aa219e75.jpg'/>"
+                }
+                else{resultat.innerHTML="<img src='https://i.pinimg.com/originals/a2/58/f6/a258f6d94f1981a7c31f61558426174c.jpg'/>"
+
+                }
+            
+                
+            }
+            
+            else if((mes >= 6) && (mes <8)){
+                //window.alert("ho estas fent be")
+                resultat.innerHTML="<img src='https://i.pinimg.com/originals/19/43/a0/1943a0889d1b3a63232eb857aa219e75.jpg'/>";
+            }
+            else if( mes == 8){ //funciona!!
+                if(dia > 20){resultat.innerHTML="<img src='https://i.pinimg.com/originals/cb/88/5c/cb885c11d88d84cc465280a85d75d79d.jpg'/>"
+                        }
+                        else{
+                            resultat.innerHTML="<img src='https://i.pinimg.com/originals/19/43/a0/1943a0889d1b3a63232eb857aa219e75.jpg'/>"
+                        }
+            }
+                
+           
+            else{
+                resultat.innerHTML="<img src='https://i.pinimg.com/originals/cb/88/5c/cb885c11d88d84cc465280a85d75d79d.jpg'/>"
+            }
+
+        }
+
+    </script>
+    
+    <style type="text/css">
+    #resultat{
+        width:80%;
+        height: 600px;
+        background-color: rgb(233, 209, 178);
+    }
+    img{
+        width:400px;
+    }
+    </style>
+</head>
+<body>
+    <label for="boto_estacions">En quina estacio estem?
+
+    </label>
+    <input type="button" id="boto_estacions" value="Comrpovar" onclick="comprovarestacio()"/>
+    <br/>
+    <div id="resultat"></div>
+</body>
+</html>
